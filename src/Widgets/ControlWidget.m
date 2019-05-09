@@ -652,9 +652,9 @@
     switch (_pressKind)
     {
     case 'play':
-        if (0.25 > value)
+        if (0.15 > value)
             [control setImage:[NSImage imageNamed:NSImageNameTouchBarSkipBackTemplate] forSegment:0];
-        else if (0.25 <= value && value <= 0.75)
+        else if (0.15 <= value && value <= 0.75)
             [control setImage:[self playPauseImage] forSegment:0];
         else
             [control setImage:[NSImage imageNamed:NSImageNameTouchBarSkipAheadTemplate] forSegment:0];
@@ -686,9 +686,9 @@
     switch (_pressKind)
     {
     case 'play':
-        if (0.25 > value)
+        if (0.15 > value)
             PostAuxKeyPress(NX_KEYTYPE_PREVIOUS);
-        else if (0.25 <= value && value <= 0.75)
+        else if (0.15 <= value && value <= 0.75)
             ;
         else
             PostAuxKeyPress(NX_KEYTYPE_NEXT);
